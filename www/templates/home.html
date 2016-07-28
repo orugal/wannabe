@@ -1,0 +1,68 @@
+<ion-view view-title="Home" hide-nav-bar="true" class="bgGris">
+  <ion-header-bar align-title="left" class="bar-positive">
+    <h1 class="title">
+      Wannabe
+    </h1>
+    <div class="buttons">
+      <button class="button icon ion-mic-a button-assertive"></button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content><!-- padding-->
+    <ion-refresher pulling-text="Desliza para actualizar..." on-refresh="refreshHome()"></ion-refresher>
+
+    <!-- información real-->
+
+    <!-- con foto -->
+    <div class="row noPadding panelPubMain bgBlanco" ng-repeat="pubHome in pubHomeArray">
+       <div class="col noPadding">
+
+          <div class="row noPadding panelPub">
+              <div class="col noPadding bgCover col-center" style="background:url({{pubHome.img}}) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;" >
+                  
+                  <div class="row noPadding">
+                      <div class="col col-67 colTrans">
+                          <div class="row noPadding">
+                            <div class="col col-20 ">
+                              <img src="{{pubHome.perf}}" width="100%" class="fotoPerfilThumb" />
+                            </div>
+                            <div class="col col-80 noPadding">
+                              <h4><strong>{{pubHome.nombre}}</strong></h4>
+                              <h6>
+                                <span class="staticsW firstStatic">Hace 2 Mins</span>
+                              </h6>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col col-33 colTrans ">
+                          <center>
+                            <button class="button ion-play btn-escuchar" ng-click="play(pubHome.audio,pubHome.id)"> Escuchar <span class="text-mini">({{pubHome.tiempo}})</span></button>
+                          </center>
+                      </div>
+                  </div>  
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p class="textPub">
+                {{pubHome.text}}
+              </p>
+            </div>
+          </div>
+
+          <div class="row noPadding">
+            <div class="col noPadding">
+                <div class="button-bar bar-light">
+                  <a class="button btn button-stable ion-alert"> Interesante <span class="badge badge-small badge-stable">100</span></a>
+                  <a class="button btn button-stable ion-ios-chatbubble"> Comentar <span class="badge badge-small badge-stable">10</span></a>
+                  <!--<a class="button btn button-small ion-more"></a>-->
+                </div>
+            </div>
+          </div> 
+
+       </div>
+    </div>
+
+  </ion-content>
+</ion-view>

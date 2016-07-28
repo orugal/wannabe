@@ -1,0 +1,37 @@
+/* Empty. Add your own CSS if you like */
+.noPadding{padding: 0}
+.imgPub{width: 100%;height:auto;}
+.bgGris{background: #F8F8F8}
+.bgBlanco{background: #fff}
+/*Modifico la barra superior*/
+.bar.bar-positive 
+{
+    border-color: #3796C3;
+    background-color: #3796C3;
+    color: #fff; 
+    border:1px solid #3796C3;
+    box-shadow:none;
+}
+.bar.bar-positive .title 
+{
+    color: #fff; 
+}
+.bar.bar-positive.bar-footer 
+{
+    /*background-image: linear-gradient(180deg, #0c60ee, #0c60ee 50%, transparent 50%); */
+}
+.panelPubMain{margin:0 0 8% 0;box-shadow:0px 0px 5px #999;}
+.panelPub h4{color:#fff;margin-bottom:0;}
+.panelPub h6{font-weight: normal;padding: 0;margin: 0}
+.panelPub .colTrans{background: url(../img/trans.png)}
+.btn-escuchar{color:#fff;background: transparent;padding: 0;margin:5% 0;}
+.btn-escuchar:hover{color:#fff;background: transparent;padding: 0;margin:5% 0;}
+.btn-escuchar:active{color:#fff;background: transparent;padding: 0;margin:5% 0;}
+.staticsW{color:#fff;}
+.firstStatic{margin:0 5% 0 0;}
+.textPub{color:#444;text-align: justify;margin:3% 0;}
+.btnInteract{padding:0;background: transparent;}
+.fotoPerfilThumb{border-radius:50%;}
+.text-mini{font-size:0.5em;}
+.badge-small{font-size: 0.8em}
+.btn{border-radius:0 !important;}
